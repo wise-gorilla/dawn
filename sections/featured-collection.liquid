@@ -44,8 +44,19 @@
     assign products_to_display = section.settings.products_to_show
     assign more_in_collection = true
   endif
+
+  assign modulo = products_to_display | modulo: 2
+  if modulo == 0
+    assign products_slide_group = products_to_display | divided_by: 2
+  else
+    assign result = products_to_display | divided_by: 2
+    assign products_slide_group = result | floor | plus: 1
+  endif
+
+  assign range = (1..products_slide_group)
 -%}
 
+<p>Modulo: {{ modulo }}, slide group: {{ products_slide_group }}, result: {{ result }}</p>
 <div class="color-{{ section.settings.color_scheme }} isolate gradient">
   <div class="collection page-width{% if section.settings.carousel_type == 'tablet' and section.settings.collection.all_products_count > 2 and section.settings.products_to_show > 2 %} page-width-desktop{% endif %} section-{{ section.id }}-padding">
     {% unless section.settings.title == blank %}
@@ -80,11 +91,18 @@
       {%- if section.settings.collection.all_products_count > 2 and section.settings.carousel_type != 'none' and section.settings.products_to_show > 2 -%}
         <div class="slider-buttons no-js-hidden{% if section.settings.collection.all_products_count < 4 %} medium-hide{% endif %}{% if section.settings.collection.all_products_count < 3 %} small-hide{% endif %}">
           <button type="button" class="slider-button slider-button--prev" name="previous" aria-label="{{ 'general.slider.previous_slide' | t }}" data-step="1">{% render 'icon-caret' %}</button>
-          <div class="slider-counter caption">
+          {% comment %} <div class="slider-counter caption">
             <span class="slider-counter--current">1</span>
             <span aria-hidden="true"> / </span>
             <span class="visually-hidden">{{ 'general.slider.of' | t }}</span>
             <span class="slider-counter--total">{{ products_to_display }}</span>
+          </div> {% endcomment %}
+          <div class="slideshow__control-wrapper">
+            {%- for i in range -%}
+              <button class="slider-counter__link slider-counter__link--dots link" aria-label="{{ 'sections.slideshow.load_slide' | t }} {{ forloop.index }} {{ 'general.slider.of' | t }} {{ forloop.length }}" aria-controls="">
+                <span class="dot"></span>
+              </button>
+            {%- endfor -%}
           </div>
           <button type="button" class="slider-button slider-button--next" name="next" aria-label="{{ 'general.slider.next_slide' | t }}" data-step="1">{% render 'icon-caret' %}</button>
         </div>
