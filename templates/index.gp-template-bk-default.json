@@ -1,148 +1,13 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
-  "sections": {
-    "image_banner": {
-      "type": "image-banner",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading_size": "large"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-          }
-        },
-        "button": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify:\/\/collections\/all",
-            "button_style_secondary_1": true,
-            "button_label_2": ""
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text",
-        "button"
-      ],
-      "settings": {
-        "image_overlay_opacity": 40,
-        "image_height": "large",
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
-        "stack_images_on_mobile": false,
-        "show_text_below": false
-      }
-    },
-    "rich_text": {
-      "type": "rich-text",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text"
-      ],
-      "settings": {
-        "padding_top": 40,
-        "padding_bottom": 0
-      }
-    },
-    "featured_collection": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Featured products",
-        "collection": "all",
-        "products_to_show": 8,
-        "show_view_all": false,
-        "show_secondary_image": true,
-        "padding_top": 28
-      }
-    },
-    "collage": {
-      "type": "collage",
-      "blocks": {
-        "collection-0": {
-          "type": "collection",
-          "settings": {
-          }
-        },
-        "product": {
-          "type": "product",
-          "settings": {
-          }
-        },
-        "collection-1": {
-          "type": "collection",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "collection-0",
-        "product",
-        "collection-1"
-      ],
-      "settings": {
-      }
-    },
-    "video": {
-      "type": "video",
-      "settings": {
-        "heading": ""
-      }
-    },
-    "multicolumn": {
-      "type": "multicolumn",
-      "blocks": {
-        "column1": {
-          "type": "column",
-          "settings": {
-          }
-        },
-        "column2": {
-          "type": "column",
-          "settings": {
-          }
-        },
-        "column3": {
-          "type": "column",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "column1",
-        "column2",
-        "column3"
-      ],
-      "settings": {
-        "title": "",
-        "image_width": "third",
-        "column_alignment": "center",
-        "background_style": "none",
-        "button_label": ""
-      }
-    },
-    "pagefly-home": {
-      "type": "pagefly-home",
-      "settings": {
-      }
-    }
-  },
   "order": [
     "image_banner",
     "rich_text",
@@ -151,5 +16,149 @@
     "video",
     "multicolumn",
     "pagefly-home"
-  ]
+  ],
+  "sections": {
+    "collage": {
+      "block_order": [
+        "collection-0",
+        "product",
+        "collection-1"
+      ],
+      "blocks": {
+        "collection-0": {
+          "settings": {
+          },
+          "type": "collection"
+        },
+        "collection-1": {
+          "settings": {
+          },
+          "type": "collection"
+        },
+        "product": {
+          "settings": {
+          },
+          "type": "product"
+        }
+      },
+      "settings": {
+      },
+      "type": "collage"
+    },
+    "featured_collection": {
+      "settings": {
+        "collection": "all",
+        "padding_top": 28,
+        "products_to_show": 8,
+        "show_secondary_image": true,
+        "show_view_all": false,
+        "title": "Featured products"
+      },
+      "type": "featured-collection"
+    },
+    "image_banner": {
+      "block_order": [
+        "heading",
+        "text",
+        "button"
+      ],
+      "blocks": {
+        "button": {
+          "settings": {
+            "button_label_1": "Shop all",
+            "button_label_2": "",
+            "button_link_1": "shopify://collections/all",
+            "button_style_secondary_1": true
+          },
+          "type": "buttons"
+        },
+        "heading": {
+          "settings": {
+            "heading_size": "large"
+          },
+          "type": "heading"
+        },
+        "text": {
+          "settings": {
+          },
+          "type": "text"
+        }
+      },
+      "settings": {
+        "desktop_content_position": "bottom-center",
+        "image_height": "large",
+        "image_overlay_opacity": 40,
+        "show_text_below": false,
+        "show_text_box": false,
+        "stack_images_on_mobile": false
+      },
+      "type": "image-banner"
+    },
+    "multicolumn": {
+      "block_order": [
+        "column1",
+        "column2",
+        "column3"
+      ],
+      "blocks": {
+        "column1": {
+          "settings": {
+          },
+          "type": "column"
+        },
+        "column2": {
+          "settings": {
+          },
+          "type": "column"
+        },
+        "column3": {
+          "settings": {
+          },
+          "type": "column"
+        }
+      },
+      "settings": {
+        "background_style": "none",
+        "button_label": "",
+        "column_alignment": "center",
+        "image_width": "third",
+        "title": ""
+      },
+      "type": "multicolumn"
+    },
+    "pagefly-home": {
+      "settings": {
+      },
+      "type": "pagefly-home"
+    },
+    "rich_text": {
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "blocks": {
+        "heading": {
+          "settings": {
+          },
+          "type": "heading"
+        },
+        "text": {
+          "settings": {
+          },
+          "type": "text"
+        }
+      },
+      "settings": {
+        "padding_bottom": 0,
+        "padding_top": 40
+      },
+      "type": "rich-text"
+    },
+    "video": {
+      "settings": {
+        "heading": ""
+      },
+      "type": "video"
+    }
+  }
 }
