@@ -1,86 +1,45 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
+  "order": [
+    "main",
+    "image-with-text",
+    "multicolumn",
+    "product-recommendations"
+  ],
   "sections": {
-    "main": {
-      "type": "main-product",
+    "image-with-text": {
+      "block_order": [
+        "image-with-text-0",
+        "image-with-text-1"
+      ],
       "blocks": {
-        "vendor": {
-          "type": "text",
+        "image-with-text-0": {
           "settings": {
-            "text": "{{ product.vendor }}",
-            "text_style": "uppercase"
-          }
+          },
+          "type": "heading"
         },
-        "title": {
-          "type": "title",
+        "image-with-text-1": {
           "settings": {
-          }
-        },
-        "caption": {
-          "type": "text",
-          "settings": {
-            "text": "{{ product.metafields.descriptors.subtitle.value }}",
-            "text_style": "subtitle"
-          }
-        },
-        "price": {
-          "type": "price",
-          "settings": {
-          }
-        },
-        "variant_picker": {
-          "type": "variant_picker",
-          "settings": {
-          }
-        },
-        "quantity_selector": {
-          "type": "quantity_selector",
-          "settings": {
-          }
-        },
-        "buy_buttons": {
-          "type": "buy_buttons",
-          "settings": {
-          }
-        },
-        "description": {
-          "type": "description",
-          "settings": {
-          }
-        },
-        "collapsible-row-0": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Materials",
-            "icon": "leather"
-          }
-        },
-        "collapsible-row-1": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Shipping & Returns",
-            "icon": "truck"
-          }
-        },
-        "collapsible-row-2": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Dimensions",
-            "icon": "ruler"
-          }
-        },
-        "collapsible-row-3": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Care Instructions",
-            "icon": "heart"
-          }
-        },
-        "share": {
-          "type": "share",
-          "settings": {
-          }
+          },
+          "type": "text"
         }
       },
+      "settings": {
+        "color_scheme": "background-2",
+        "height": "small",
+        "layout": "text_first"
+      },
+      "type": "image-with-text"
+    },
+    "main": {
       "block_order": [
         "vendor",
         "title",
@@ -96,76 +55,126 @@
         "collapsible-row-3",
         "share"
       ],
+      "blocks": {
+        "buy_buttons": {
+          "settings": {
+          },
+          "type": "buy_buttons"
+        },
+        "caption": {
+          "settings": {
+            "text": "{{ product.metafields.descriptors.subtitle.value }}",
+            "text_style": "subtitle"
+          },
+          "type": "text"
+        },
+        "collapsible-row-0": {
+          "settings": {
+            "heading": "Materials",
+            "icon": "leather"
+          },
+          "type": "collapsible_tab"
+        },
+        "collapsible-row-1": {
+          "settings": {
+            "heading": "Shipping & Returns",
+            "icon": "truck"
+          },
+          "type": "collapsible_tab"
+        },
+        "collapsible-row-2": {
+          "settings": {
+            "heading": "Dimensions",
+            "icon": "ruler"
+          },
+          "type": "collapsible_tab"
+        },
+        "collapsible-row-3": {
+          "settings": {
+            "heading": "Care Instructions",
+            "icon": "heart"
+          },
+          "type": "collapsible_tab"
+        },
+        "description": {
+          "settings": {
+          },
+          "type": "description"
+        },
+        "price": {
+          "settings": {
+          },
+          "type": "price"
+        },
+        "quantity_selector": {
+          "settings": {
+          },
+          "type": "quantity_selector"
+        },
+        "share": {
+          "settings": {
+          },
+          "type": "share"
+        },
+        "title": {
+          "settings": {
+          },
+          "type": "title"
+        },
+        "variant_picker": {
+          "settings": {
+          },
+          "type": "variant_picker"
+        },
+        "vendor": {
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          },
+          "type": "text"
+        }
+      },
       "settings": {
         "hide_variants": true,
         "padding_bottom": 12
-      }
-    },
-    "image-with-text": {
-      "type": "image-with-text",
-      "blocks": {
-        "image-with-text-0": {
-          "type": "heading",
-          "settings": {
-          }
-        },
-        "image-with-text-1": {
-          "type": "text",
-          "settings": {
-          }
-        }
       },
-      "block_order": [
-        "image-with-text-0",
-        "image-with-text-1"
-      ],
-      "settings": {
-        "height": "small",
-        "layout": "text_first",
-        "color_scheme": "background-2"
-      }
+      "type": "main-product"
     },
     "multicolumn": {
-      "type": "multicolumn",
-      "blocks": {
-        "column-0": {
-          "type": "column",
-          "settings": {
-            "title": "Free Shipping",
-            "link_label": ""
-          }
-        },
-        "column-1": {
-          "type": "column",
-          "settings": {
-            "title": "Hassle-Free Exchanges",
-            "link_label": ""
-          }
-        }
-      },
       "block_order": [
         "column-0",
         "column-1"
       ],
+      "blocks": {
+        "column-0": {
+          "settings": {
+            "link_label": "",
+            "title": "Free Shipping"
+          },
+          "type": "column"
+        },
+        "column-1": {
+          "settings": {
+            "link_label": "",
+            "title": "Hassle-Free Exchanges"
+          },
+          "type": "column"
+        }
+      },
       "settings": {
-        "title": "",
         "background_style": "none",
-        "button_label": ""
-      }
+        "button_label": "",
+        "title": ""
+      },
+      "type": "multicolumn"
     },
     "product-recommendations": {
-      "type": "product-recommendations",
       "settings": {
         "image_ratio": "square",
-        "show_secondary_image": true,
-        "padding_bottom": 28
-      }
+        "padding_bottom": 28,
+        "show_secondary_image": true
+      },
+      "type": "product-recommendations"
     }
-  },
-  "order": [
-    "main",
-    "image-with-text",
-    "multicolumn",
-    "product-recommendations"
-  ]
+  }
 }
