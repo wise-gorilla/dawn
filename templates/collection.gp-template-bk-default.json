@@ -8,20 +8,20 @@
  * ------------------------------------------------------------
  */
 {
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "settings": {
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+      }
+    }
+  },
   "order": [
     "banner",
     "product-grid"
-  ],
-  "sections": {
-    "banner": {
-      "settings": {
-      },
-      "type": "main-collection-banner"
-    },
-    "product-grid": {
-      "settings": {
-      },
-      "type": "main-collection-product-grid"
-    }
-  }
+  ]
 }
